@@ -7,10 +7,10 @@ from __future__ import print_function
 
 from pylearn2.utils import serial
 from pylearn2.datasets import preprocessing
-from pylearn2.utils import string
+from pylearn2.utils import string_utils
 from pylearn2.datasets.cifar100 import CIFAR100
 
-data_dir = string.preprocess('${PYLEARN2_DATA_PATH}/cifar100')
+data_dir = string_utils.preprocess('${PYLEARN2_DATA_PATH}/cifar100')
 
 print('Loading CIFAR-100 train dataset...')
 train = CIFAR100(which_set='train')
